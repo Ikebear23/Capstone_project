@@ -20,7 +20,7 @@ const Navbar = ({ token, setToken }) => {
         )}
         {token && (
           <li>
-            <Link to="/ccheckout"> Checkout </Link>
+            <Link to="/checkout"> Checkout </Link>
           </li>
         )}
         {!token && (

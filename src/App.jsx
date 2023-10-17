@@ -4,9 +4,10 @@ import "./App.css";
 import Productpage from "./components/pages/productpage.jsx";
 import Navbar from "./components/pages/Navbar.jsx";
 import Login from "./components/pages/loginform";
-import Register from "./components/userfunctions/signupform";
+//import Register from "./components/userfunctions/signupform";
 import Cart from "./components/pages/checkout";
 import Home from "./components/pages/Home";
+import Profile from "./components/pages/profile";
 function App() {
   const [token, setToken] = useState("");
   return (
@@ -16,9 +17,13 @@ function App() {
       </>
       <>
         <Routes>
+          <Route
+            path="/profile"
+            element={<Profile token={token} setToken={setToken} />}
+          />
           <Route path="/" element={<Home />} />
           <Route path="/cart" element={<Cart />} />
-          <Route path="/register" element={<Register setToken={setToken} />} />
+          <Route path="/register" element={<h1>Register</h1>} />
           <Route
             path="/login"
             element={<Login token={token} setToken={setToken} />}
