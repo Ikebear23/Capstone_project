@@ -6,3 +6,4 @@ const Profile = () => {
   );
 };
 export default Profile;
+//try to store all users to make comparison when logged in to figure out user information

@@ -10,16 +10,17 @@ export const fetchAllproducts = async () => {
   } catch (err) {
     console.error(`Oh no, trouble fecthing all products`);
   }
-}; /*
+};
 export const fetchAllMembers = async () => {
   try {
     const response = await fetch("https://fakestoreapi.com/users");
     const result = response.json();
     return result;
+    console.log(result);
   } catch (err) {
     console.error(err);
   }
-};*/
+}; /*
 export const registerUser = async (username, password) => {
   try {
     const response = await fetch(`${BASE_URL2}/users/register`, {
@@ -40,7 +41,7 @@ export const registerUser = async (username, password) => {
   } catch (err) {
     console.error(err);
   }
-};
+};*/
 /*export const loginUser = async (username, password) => {
   try {
     const response = await fetch(`${BASE_URL2}/users/login`, {

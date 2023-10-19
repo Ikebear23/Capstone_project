@@ -10,6 +10,8 @@ import Home from "./components/pages/Home";
 import Profile from "./components/pages/profile";
 function App() {
   const [token, setToken] = useState("");
+  //try to get users here so soon as the page loads i can be ready to log in
+  //best to set variables that will be consistently used in parent components
   return (
     <div>
       <>
